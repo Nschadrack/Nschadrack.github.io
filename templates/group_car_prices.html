@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+	<script src="../static/js/main.js"></script>
+
+    <title>Safe journey - company - events cars</title>
+  </head>
+  <body>
+    <div id="aside_navigation">
+		<div id="sfjourney_aside_logo">
+			<p>Safe journey logo </p>
+		</div>
+		<div id="aside_navigations">
+			<a href="./dashboard.html">Dashboard</a>
+			<a href="./company_group_cars_list.html">Events cars <span class="aside-navigation-spans">0</span></a>
+			<a href="./company_single_cars_list.html">Personal cars <span class="aside-navigation-spans">0</span></a>
+			<a href="./bookings.html">Booking <span class="aside-navigation-spans">new 0</span></a>
+			<a href="#">Available cars <span class="aside-navigation-spans">0</span></a>
+			<a href="#">Starting services soon <span class="aside-navigation-spans">0</span></a>
+			<a href="#">Cars in service <span class="aside-navigation-spans">0</span></a>
+			<a href="#">Ending services soon <span class="aside-navigation-spans">0</span></a>
+			<a href="#">Car prices</a>
+			<a href="#">Account</a>
+			<a href="#">Settings</a>
+			<a href="#">Help & Support</a>
+		</div>
+	</div>
+	<div id="main_load">
+		<div id="main_load_header">
+			<p>main load header</p>
+		</div>
+		<div id="main_load_data">
+			<div id="car_title_header_and_new_btn">
+				<p id="car_title_header_and_new_btn_p">#code cars services</p>
+				<a href="./company_group_cars_list.html" id="price_back_to_car_list">Back to cars list</a>
+			</div>
+			<div id="car_body_data">				
+				<div id="car_prices">
+					<div id="car_viewed_for_prices" class="car_viewed_for_services_prices">
+						<div>
+							<p>Code: </p>
+							<p>Manufacturer: </p>
+							<p>Car Model: </p>
+						</div>
+						<div>
+							<p>Manufacture year: </p>
+							<p>Number of seats:</p>
+							<p>Plate number: </p>							
+						</div>
+						<div>
+							<p>Current location: </p>
+							<p>Published: </p>
+							<p>Approval status: </p>
+						</div>
+					</div>
+					<div id="current_price_list" class="current_price_price_archive_price">
+						<h4>List of all current prices assigned to this car</h4>
+						<button id="view_price_archive_button" onclick='showGroupPriceArchive("block")'>show price archives</button>
+						<form>
+							<select>
+								<option value="all services" selected>All services</option>
+								<option value="wedding services">Wedding services</option>
+								<option value="wedding services">Wedding services</option>
+								<option value="wedding services">Wedding services</option>
+								<option value="wedding services">Wedding services</option>
+							</select>
+							<select>
+								<option value="From" selected disabled>From</option>
+								<option value="Gasabo">Gasabo</option>
+								<option value="Rusizi">Rusizi</option>
+							</select>
+							<select>
+								<option value="To" selected disabled>To</option>
+								<option value="Gasabo">Gasabo</option>
+								<option value="Rusizi">Rusizi</option>
+							</select>
+							<select>
+								<option value="10" selected>10</option>
+								<option value="20">20</option>
+								<option value="30">30</option>
+								<option value="40">40</option>
+								<option value="all">All records</option>
+							</select>
+							<input type="submit" value="view"/>
+						</form>						
+						<table>
+							<thead>
+								<th>Code</th>
+								<th>From</th>
+								<th>To</th>
+								<th>Price</th>
+								<th>Service</th>
+								<th>Recorded date</th>
+								<th>Action</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>12</td>
+									<td>Gasabo</td>
+									<td>Rusizi</td>
+									<td>30000 Rwf</td>
+									<td>Wedding service</td>
+									<td>20-08-2020</td>
+									<td><a href="#">Delete this price</a></td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>Gasabo</td>
+									<td>Rusizi</td>
+									<td>30000 Rwf</td>
+									<td>Wedding service</td>
+									<td>20-08-2020</td>
+									<td><a href="#">Delete this price</a></td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>Gasabo</td>
+									<td>Rusizi</td>
+									<td>30000 Rwf</td>
+									<td>Wedding service</td>
+									<td>20-08-2020</td>
+									<td><a href="#">Delete this price</a></td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>Gasabo</td>
+									<td>Rusizi</td>
+									<td>30000 Rwf</td>
+									<td>Wedding service</td>
+									<td>20-08-2020</td>
+									<td><a href="#">Delete this price</a></td>
+								</tr>
+							</tbody>
+						</table>						
+					</div>
+					<div id="price_archive_list" class="current_price_price_archive_price">
+						<h4>List of all prices which were assigned to this car before (price archive)</h4>
+						<button id="hide_price_archives" onclick="showGroupPriceArchive('none')">Hide price archives</button>
+						<form>
+							<select>
+								<option value="all services" selected>All services</option>
+								<option value="wedding services">Wedding services</option>
+								<option value="wedding services">Wedding services</option>
+								<option value="wedding services">Wedding services</option>
+								<option value="wedding services">Wedding services</option>
+							</select>
+							<select>
+								<option value="From" selected disabled>From</option>
+								<option value="Gasabo">Gasabo</option>
+								<option value="Rusizi">Rusizi</option>
+							</select>
+							<select>
+								<option value="To" selected disabled>To</option>
+								<option value="Gasabo">Gasabo</option>
+								<option value="Rusizi">Rusizi</option>
+							</select>
+							<select>
+								<option value="last used date" selected disabled>Last date used</option>
+								<option value="Gasabo">20-10-2020</option>
+								<option value="Gasabo">12-08-2020</option>
+								<option value="Gasabo">05-07-2020</option>
+							</select>
+							<select>
+								<option value="10" selected>10</option>
+								<option value="20">20</option>
+								<option value="30">30</option>
+								<option value="40">40</option>
+								<option value="all">All records</option>
+							</select>
+							<input type="submit" value="view"/>
+						</form>
+						<table>
+							<thead>
+								<th>Code</th>
+								<th>From</th>
+								<th>To</th>
+								<th>Price</th>
+								<th>Service</th>
+								<th>Recorded date</th>
+								<th>Last date used</th>
+								<th>Action</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>12</td>
+									<td>Gasabo</td>
+									<td>Rusizi</td>
+									<td>30000 Rwf</td>
+									<td>Wedding service</td>
+									<td>20-08-2020</td>
+									<td>20-11-2020</td>
+									<td><a href="#">Reuse this price</a></td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>Gasabo</td>
+									<td>Rusizi</td>
+									<td>30000 Rwf</td>
+									<td>Wedding service</td>
+									<td>20-08-2020</td>
+									<td>20-11-2020</td>
+									<td><a href="#">Reuse this price</a></td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>Gasabo</td>
+									<td>Rusizi</td>
+									<td>30000 Rwf</td>
+									<td>Wedding service</td>
+									<td>20-08-2020</td>
+									<td>20-11-2020</td>
+									<td><a href="#">Reuse this price</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

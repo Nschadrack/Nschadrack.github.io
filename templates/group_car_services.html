@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+	<script src="../static/js/main.js"></script>
+
+    <title>Safe journey - company - events cars</title>
+  </head>
+  <body>
+    <div id="aside_navigation">
+		<div id="sfjourney_aside_logo">
+			<p>Safe journey logo </p>
+		</div>
+		<div id="aside_navigations">
+			<a href="./dashboard.html">Dashboard</a>
+			<a href="./company_group_cars_list.html">Events cars <span class="aside-navigation-spans">0</span></a>
+			<a href="./company_single_cars_list.html">Personal cars <span class="aside-navigation-spans">0</span></a>
+			<a href="./bookings.html">Booking <span class="aside-navigation-spans">new 0</span></a>
+			<a href="#">Available cars <span class="aside-navigation-spans">0</span></a>
+			<a href="#">Starting services soon <span class="aside-navigation-spans">0</span></a>
+			<a href="#">Cars in service <span class="aside-navigation-spans">0</span></a>
+			<a href="#">Ending services soon <span class="aside-navigation-spans">0</span></a>
+			<a href="#">Car prices</a>
+			<a href="#">Account</a>
+			<a href="#">Settings</a>
+			<a href="#">Help & Support</a>
+		</div>
+	</div>
+	<div id="main_load">
+		<div id="main_load_header">
+			<p>main load header</p>
+		</div>
+		<div id="main_load_data">
+			<div id="car_title_header_and_new_btn">
+				<p id="car_title_header_and_new_btn_p">#code cars services</p>
+				<a href="./company_group_cars_list.html" id="price_back_to_car_list">Back to cars list</a>
+			</div>
+			<div id="car_body_data">				
+				<div id="car_services">
+					<div id="car_viewed_for_services" class="car_viewed_for_services_prices">
+						<div>
+							<p>Code: </p>
+							<p>Manufacturer: </p>
+							<p>Car Model: </p>
+						</div>
+						<div>
+							<p>Manufacture year: </p>
+							<p>Number of seats:</p>
+							<p>Plate number: </p>							
+						</div>
+						<div>
+							<p>Current location: </p>
+							<p>Published: </p>
+							<p>Approval status: </p>
+						</div>
+					</div>
+					<div id="car_services_list" class="car_services_list_new_form">
+						<h4>List of services currently assigned to this car</h4>
+						<table>
+							<thead>
+								<th>Service name</th>
+								<th></th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Wedding services</td>
+									<td><a href="#">Delete</a></td>
+								</tr>
+								<tr>
+									<td>Prayer services</td>
+									<td><a href="#">Delete</a></td>
+								</tr>
+								<tr>
+									<td>Picnic services</td>
+									<td><a href="#">Delete</a></td>
+								</tr>
+								<tr>
+									<td>Late night pick</td>
+									<td><a href="#">Delete</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="car_services_new_form" class="car_services_list_new_form">
+						<h4>Assign a new service to this car</h4>
+						<form>
+							<select>
+								<option disabled selected>Choose the service</option>
+								<option value="wedding services">Wedding services</option>
+								<option value="picnic services">Picnic services</option>
+							</select>
+							<input type="submit" value="Confirm new service"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
